@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"arithmeticoperations","l":"Addition"},{"l":"All Classes","url":"allclasses-index.html"}]
