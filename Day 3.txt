@@ -1,0 +1,184 @@
+Inheritance
+==========
+
+enables us to reuse existing code or extend an existing class/type
+
+types of Inheritance in Java
+=======================
+
+Single Inheritance 
+Multilevel Inheritance 
+hierarchial Inheritance 
+
+Methods in Java
+==============
+Dividing a complex problem in to smaller chunks to understand and reusing
+
+Two Types of Methods in Java
+============================
+User defined Methods :
+==================
+developer create this type of methods based on requirements
+
+Pre Defined methods or Standard Library Methods
+==========================================
+These are built in methods in Java Library and readily available for use
+Example: nextInt(),nextFloat() etc.,
+
+Syntax
+======
+returnType methodName(parameterlist){
+//method body
+}
+
+returnType 
+=========
+int
+float
+String or any Object etc., 
+it specifies the return value from the method
+
+methodName
+===========
+Name of the method is an identifier that is used to refer the method in a class or program
+
+methodBody
+==========
+it includest statments for a particular tasks,The method body should be enclosed in { }
+
+(parameterlist) 
+=============
+values passed to complete the task
+
+Example
+=======
+int readDetails(){ //method signature => returntype + methodname(parameter list)
+     int i = 10;
+return i;
+}
+
+
+Points:
+======
+variables which defined inside the method called as local variables and must be initialized
+
+Scope of local variable and parameter
+=================================
+	void printValue(int data) {//data here is parameter
+		int d = 0;//local variable
+		System.out.println(value + d);
+	}//d is local variable which will be available after this bracket
+(localvariables and parameter scope is inside the method it is declared)
+
+Methods are further divided into 
+===========================
+Instance Methods => Methods that are copied inside the object and called using objectname
+class Methods => Methods that are declared using static keyword
+Factory Methods => methods that return the class itself
+
+Constructors In Java
+==================
+Constructors in java are similar to method that is used to invoke an object of the class(indirectly constructor invokes the class)
+
+It allocates the memory for the class
+
+A Constructor has the same name as the class name and do not have any return type
+
+if Constructor is not provided by the developer Java Compiler add a default constructor at run-time to the program.
+
+Constructor is called while creating an object of the class
+(Constructors are invoked implicitly when you instantiate objects)
+
+Constructors cannot be inherited
+
+Then if we need to call super class constructor then?
+
+Can we multiple constructors in a class?
+yes,but number of parameters or type of parameters should be different
+
+Constructors are called at run-time
+
+Note 1:
+Note 2:
+
+
+Three types of constructors
+=======================
+1.  default constructor
+2. paramaterised constructor
+3. copy constructor
+================
+Copy Constructor is easier to use when our class contains a complex object with several paramaters
+
+What are the access specifiers accepted for constructor?
+a) ALL (answer)
+b) private
+c) protected
+d)public
+e)default
+
+
+this
+====
+this is like a pointer to the current class
+
+variable
+method
+constructor
+
+this keyword can be used only for instance variables
+to qualify instance variable in the constructor while copying data
+
+
+super keyword
+============
+this keyword is like a pointer to the super class
+
+variable
+method
+constructor => super class constructor will be called if there is no default constructor if not it shows following error
+"Implicit super constructor A() is undefined. Must explicitly invoke another constructor"
+
+
+Access Modifiers
+=============
+affects the code that is visible to different class in hierarchy
+
+we have 4 types of modifiers in java
+
+1.Public
+2.Protected
+3.Default
+4.Private
+
+Access Modifiers or Specifiers are used only for Instance Variable 
+
+Private:=
+========
+private keyword is used to declare the data to restrict the changes to the data
+if variable or method is declared as private we can only access it inside the same class
+(visibility of members will be in the same class).
+
+Can we access private data members outside of class?
+yes,using getters and setters
+
+example of private
+================
+private int id;
+
+setId()
+getId()
+
+2.Protected
+=============
+Protected Class members can be accessed only in sub class/(es).
+
+if a subclass is in different package?
+
+yes we can access protected data members in another class which is declared in another package,but it should
+be sub class of it.
+
+Class members = properties/variables/data + methods
+
+polymorphism
+=============

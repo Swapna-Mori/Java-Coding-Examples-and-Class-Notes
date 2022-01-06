@@ -1,0 +1,162 @@
+While vs For Loop?
+================
+Fixed number of iterations in For loop
+When number of Iterations are not known  the use While loop
+
+Switch
+=======
+Selection statement ,based on the choice the statements will execute
+
+Note:
+====
+In Java we can use strings as case values.
+Cannot write switch on a value of type float. Only convertible int values, strings or enum variables are permitted
+
+break and continue statement:
+=========================
+it should be used inside the loop to break the loop based on the condition
+
+Practice Question Switch
+=====================
+Write a Java program to read an integer value
+
+1. find factorial
+2. reverse the number
+3. whether it is palindrome or not 
+4. perfect number
+note : 6 => 1,2,3 => 1 + 2 + 3 = 6
+5.strong number
+note : 145 => 1! + 4! + 5! = 145
+
+
+TypeCasting
+===========
+Converting one primitive data type in to another
+
+Implicit /Widening or automatic 
+===========================
+converting smaller type to larger data types
+
+Example
+==========
+byte -> short -> char -> int -> long -> float -> double
+
+
+Explicit /Narrowing or manual 
+===========================
+converting smaller type to larger data types
+
+Example
+==========
+ double -> float -> long-> int -> char -> short -> byte
+
+Strings in Java
+=============
+Sequence of character is String
+
+String is a class in Java which is defined in java.lang package
+
+Strings are used to manipulate the data stored as strings(Sequence of characters)
+
+Strings can be manipulated using predefined methods in the String class
+
+List of methods
+=============
+concat => to combine two strings
+substring => to extract a string from a existing string
+charAt => to read a character from the string
+indexOf => to find first occurance of the given character
+lastIndexOf  ==>to find last occurance of the given character
+etc.,
+
+How to create the String?
+=====================
+String s = "This is a string";
+String s1 = new String("This is a string");
+String s2 = new String();
+char[] ch = {'A','P','P','L','E'};
+String s3 = new String(ch);
+
+//string comparision
+
+if two string are equal compareTo() method returns 0
+if one string(s1) is greater than second string(s2) then  compareTo() method returns positive value
+if one string(s1) is lesser than second string(s2) then  compareTo() method returns negative value
+
+OOPS
+=====
+class 
+====
+=> a blue print or logical representation of the task or code
+=> it is user-defined data types that act as blueprint for  objects with set of attributes(data) and methods(code)
+       
+Object
+=====
+=> Objects correspond to real world entities
+=> Objects are physical representation of the code
+
+Note:   => no memory allocation for this code until we create Objects for the class
+
+Encapsulation =>  Binding of data + code (hiding uncessary details)
+============
+
+Employee <=> Human
+========
+empid
+empname
+salary
+empDOB
+empDOj etc.,
+
+worksInaCompany()
+walk()
+play()
+drawSalary()
+
+
+Abstraction
+==========
+Hiding any unnecessary details/code (showing necessary details)
+
+Example:
+========
+Scanner class
+CAR => how to drive the car
+Mobile Phone etc.,
+
+Inheritance
+=========
+Reusing of the code from other classes
+Relationship between two classes
+
+polymorphism
+============
+Rewriting the code according to data
+
+Benefits of OOPS
+============== 
+Modularity
+Reusability
+Productivity
+Security
+Flexibility etc.,
+
+
+Variables in Java
+==============
+instance variables => variables which are defined inside the class
+static/class variables
+local variables  => variables which are defined inside the method
+parameters
+
+
+next() vs nextLine()
+================
+next() does not accept white space between the words because white space is end of line
+nextLine()  accepts white space between the words because new line (\n)  is end of line
+
+
+
+
+
+

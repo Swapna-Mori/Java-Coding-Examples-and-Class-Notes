@@ -1,0 +1,234 @@
+Introduction to Programming Languages
+=================================
+we can choose any High Level programming language 
+C => MileStone 
+C++ 
+Pascal
+Visual C++
+Java
+.Net etc.,
+
+We will code using english language and converted into machine level language using translators (compiler or interpreter).
+
+Java
+====
+BuzzWords
+=========
+S2 PORMA HI D2
+
+Simple => easy and simple to learn
+Secure => 
+Platform Independent 
+Object Oriented
+Robust 
+Multithreaded 
+Architecture Neutral
+High Performance
+Interpreted
+Distributed
+Dynamic =>
+
+Java supports to use methods or code from native languages like c and c++ or python or javascript etc,
+
+History of Java
+============
+interactive television => digital cable => 1991
+
+Green Team =>
+==========
+James Gosling 
+patrick naughton
+mike sheridan
+
+chris warth
+edfrank
+
+.gt (greentalk)
+
+
+Example of First Program in Java
+==========================
+public class MyName {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Mouritech ");
+	}
+
+}
+
+The above program is structure of java program
+
+Data types in Java
+===============
+Integer
+=====
+byte ==== 1 byte
+short ===2 byte
+int==== 4 byte
+long ===8 bytes
+
+Float
+====
+float ==== 4 byte
+double ==== 8 byte
+
+Character
+========
+char ==== 2 byte
+Unicode => arabic,katakana etc., =>I 18 N (Internationalization)
+
+Boolean
+=======
+boolean => 1 bit
+
+literals
+======
+values stored in the memory
+
+integer literal  => Example : -35,-564564564,45,45678
+floating point literal   => Example : -35.00,-564564564.123,45.09,45678.345
+character literal => Example : 'A','$','&' etc.,
+boolean literal   => Example :- true or false
+
+variable
+======
+an unique memory location to store the data which changes continuously
+
+Identifier
+=======
+to identify the variables,classes or methods or packages or constants in memory we use identifiers.
+
+Note: We cannot start the identifiers using digits
+====
+
+example: MyName => class name is an identifier
+=======
+Rules for writing the class name in java
+===============================
+1.  Class Name always starts with Capital letter
+2. If there is a second word inthe class name that word also start with capital letter
+3. we can use _,$ to separate two words or to add symbols to the class name
+4.  there is no space between two words in the classname
+5. class name and file name should be same
+
+Rules for writing the variable names in java
+==================================
+1. Write the proper names for storing the data 
+2. variables uses camelCase
+     Example:=> companyName,aadharNo,dataOfBirth etc,
+3. we can use _,$ to separate two words or to add symbols to the variable names
+4.  there is no space between two words in the variablename
+
+
+Rules for writing the constant names in java
+==================================
+1. Write the proper names for storing the data 
+2. constant names uses uppercase
+     Example:=> PI,MINIMUMBALANCE
+3. we can use _,$ to separate two words or to add symbols to the constant names
+4.  there is no space between two words in the constant names
+
+Rules for writing the methods names in java
+==================================
+1. Write the methods names for writing the code to access the data
+2. variables uses camelCase
+     Example:=> printCompanyName(),printAadharNo(),printDataOfBirth() etc,
+3. we can use _,$ to separate two words or to add symbols to the methods names
+4.  there is no space between two words in the methods  names.
+
+Rules for writing the package names in java
+==================================
+1. Write the proper package  names for grouping the similar code
+2. package Name is declared in lowercase letters
+     Example:=> arithmeticoperations,arithmetic_operations etc.,
+3. we can use _,$ to separate two words or to add symbols to the packages names
+4.  there is no space between two words in the packages names.
+
+What are packages in java?
+=====================
+packages are group of similar files under one single name
+
+it is good practice in java to group the files under a package ,
+to access them easily in future
+
+There are two types of packages
+=========================
+user defined packages
+==================
+programmers who are using java can also create there own packages using following syntax
+
+syntax:
+======
+package <packagename>
+
+Example:
+=======
+package arithmeticoperations;
+
+Note: package declaration is the first line of code in the Java program
+====
+pre defined packages
+=================
+which are already part of java software,written by developers who developed java
+example:
+=======
+java.io
+java.lang
+java.sql
+java.util etc.,
+400 + predefined packages are available in java
+
+
+
+Structure of the Java program
+========================
+
+package declarations;
+import statements;
+//code
+
+Executing Java Program from commandline
+==================================
+
+creating the package from commandline
+================================
+
+
+Comments in Java
+==============
+comments are used to add some details about the code in the java file ,which increases the readability of the code.
+
+Java has 3 types of comments:
+========================
+single line comment =>//
+multiline comment => /*      */
+documentation comment => /**      */
+
+Operators in Java
+==============
+Arithmetic Operators 
+Logical Operators
+BitWise Operators
+Comparision Operators or Relational Operators
+Ternary Operator
+Assignment Operator
+
+
+
+Practice Questions for Day 1
+======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
