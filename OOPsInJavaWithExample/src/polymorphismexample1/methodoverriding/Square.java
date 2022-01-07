@@ -1,7 +1,8 @@
 package polymorphismexample1.methodoverriding;
 
 public class Square extends Shape {
-	
+	public static int length;
+	public static int breadth;
 	public void area() {
 		System.out.println("Square area will be calculated");
 	}

@@ -7,6 +7,11 @@ public class PolymorphismExample {
 		
 		Square s = new Square();
 		s.area();
-		s.confirmShape(56);
+			
+		Shape sh = new Shape();
+		Shape sh1 = new Shape();
+		Shape sh2 = new Shape();
+		Shape sh3 = new Shape();
+	
 	}
 }

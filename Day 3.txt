@@ -106,7 +106,7 @@ yes,but number of parameters or type of parameters should be different
 Constructors are called at run-time
 
 Note 1:constructors cannot be overriden
-Note 2:
+Note 2:Constructos cannot be static (Illegal modifier for the constructor only public, protected & private are permitted)
 
 
 Three types of constructors

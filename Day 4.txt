@@ -30,3 +30,169 @@ method Overloading can be implemented when two classes are inherited or in the s
 In method Overloading JVM decides which method to call at compile time based on the method signature  so it is called as compiletime polymorphism
 Can reduce the visibility(access specifiers) of the methods 
 
+static
+=====
+static keyword in java plays an important role for memory management.
+static keyword can be used with 
+a.  methods
+b. variables
+c. import
+d. blocks
+e. nested classes
+
+it is  a keyword that specifies to share the same variable or method of a given class to all its instances/objects
+
+Example:
+=======
+In case if HRMS is developed for a company tthen company name for all employees is same,
+college name of all students in Admission system for college is same etc., 
+
+these type of above variables or methods will be declared as static  where it is stored in the class level not object level at time of loading the class
+
+variables which are declared using static are called as class variables because these variables are stored along with the class or memory is allocated to this variables along with class not object.(i.e., these variables are stored in class area)
+
+
+static variable example or class variables:
+===================
+static int value = 30;
+
+non static variable or instance variables :
+===================================
+int value = 50;
+
+
+static method example or class method example :
+==========================================
+static int displayValue(){
+ int value = 50; //this statement throws an error  => Cannot make a static reference to the non-static field value
+}
+
+non static method example or instance method example :
+=============================================
+int displayValue(){
+ static int value = 30;// this will not show an  error
+}
+
+
+***** non static variables or data cannot be used inside the static block or static method because non static data or methods are loaded in to memory along with object.
+***** static variables or data can be used inside the non static block or  method because static data or methods are
+loaded(allocation of memory) along with class.
+***** when object is created constructor is called so static data which is already loaded in memory can be initialised.
+***** this and super keyword cannot be used to static variables.
+****** static variable and methods cannot be inherited
+****** As static methods are not inherited we cannot override the static methods
+
+Static class /Nested class /Inner class
+===============================
+outer class cannot be static
+inner class can be static
+
+What is inner class?
+
+a class inside the another class or nested class
+
+innerclass or nested class are used for accessing private data members of the outer class
+
+we can create innerclass with static and with out static keyword
+
+
+final
+====
+final is a keyword in java which is used to restrict a class ,a variable and method
+
+if we declare and initialize a variable with the final keyword we cannot modify its value.(stop valuechange)
+Example: 
+========
+final float PI = 3.14f;
+if we declare a method as final,it cannot be overriden by any subclasses(stop methodoverriding)
+Example:
+=======
+public final methodOne(){
+}
+
+if we declare a class as final,we cannot inherit or extend it. (stop inheritance)
+
+Example:
+=======
+final class ClassOne{
+
+}
+wrapper classes are predefined final classes in java
+String class also declared as final
+
+AutoBoxing and UnBoxing
+======================
+java 6 
+
+int i = 20; //this is not an object
+
+
+
+the above statement is violating the  OOPS principle
+
+So JVM converts above int data in to Integer Object
+
+"Concept of converting primitive types to Object is called as Autoboxing."
+"Concept of converting Object  to primitive types  is called as Unboxing."
+
+Autoboxing and Unboxing is done using Wrapper classes
+
+int  => Integer
+float => Float
+byte => Byte 
+.
+.
+.
+.etc.,
+
+The above wrapper classes are defined in java.lang package
+
+ which is the default package imported by JVM?
+ans : java.lang package
+
+which is the super class for all classes in java?
+ans : Object class
+Object class is declared in java.lang package
+so the default package imported by jvm is java.lang package
+
+can we create final class?
+yes
+
+How objects are uniquely identified in Heap?
+Objects are stored in Heap memory 
+Hashcode is a unique code generated for uniquely representing objects in Heap Memory
+
+
+String object are immutable (unmodifiable or unchangeable)
+
+once object is created its data or state can't be changed instead it will create an new object
+
+Example:
+========
+AccoutNumber in a bank(changeable) => security
+password => security
+
+it becomes malicious when strings are not immutable
+
+first consideration to declare string as immutable Security
+Caching
+efficiency
+concurrency
+design   &
+string pool
+
+so considering above points we need to be careful while changing the strings mutiple times
+to avoid frequent creation of new objects while changing the strings we can use mutable string classes
+
+StringBuffer
+StringBuilder
+
+above two classes are mutable string classes in java,where we can convert a string to mutable and vice versa.
+
+only difference between stringbuffer and stringbuilder is 
+StringBuffer methods are threadsafe methods while
+StringBuilder are not threadsafe
+
+annotations
+Date
+

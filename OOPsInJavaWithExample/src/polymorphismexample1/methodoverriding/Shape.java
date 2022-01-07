@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Shape {
 	
-	public int length,breadth;
+	public static int length;
+	public static int breadth;
+	public int value;
 	
-	public String confirmShape() {
+	public static String confirmShape() {
 		if (length == breadth) {
 			return "square";
 		}else {
@@ -14,36 +16,24 @@ public class Shape {
 		}
 	}
 	
-	public String confirmShape(int a) {
-		if (length == breadth) {
-			return "square";
-		}else {
-			return "rectangle";
-		}
-	}
 	
-	private String confirmShape(int a,float b) {
-		if (length == breadth) {
-			return "square";
-		}else {
-			return "rectangle";
-		}
-	}
 	
-	Scanner sc = new Scanner(System.in);
-	public void readDimensions() {
-		String shape = this.confirmShape();
+
+	
+	static Scanner sc = new Scanner(System.in);
+	public static void readDimensions() {
+		String shape = confirmShape();
 		if(shape.equals("square")) {
 		System.out.println("enter the length = breadth");
 		System.out.println("enter the dimension");
-		this.length = sc.nextInt();
+		length = sc.nextInt();
 		}else {
 			System.out.println("enter the length != breadth");
 			System.out.println("enter the dimensions");
 			System.out.println("enter the length");
-			this.length = sc.nextInt();
+			length = sc.nextInt();
 			System.out.println("enter the breadth");
-			this.breadth = sc.nextInt();
+			breadth = sc.nextInt();
 		}
 	}
 	

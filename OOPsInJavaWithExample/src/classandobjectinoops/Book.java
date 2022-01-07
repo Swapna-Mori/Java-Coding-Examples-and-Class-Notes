@@ -12,6 +12,20 @@ public class Book {
 	int no_Of_Pages;
 	String publishedDate;
 	
+	public Book() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Book(String isbnNo, String bookName, float bookPrice, int no_Of_Pages, String publishedDate) {
+		super();
+		this.isbnNo = isbnNo;
+		this.bookName = bookName;
+		this.bookPrice = bookPrice;
+		this.no_Of_Pages = no_Of_Pages;
+		this.publishedDate = publishedDate;
+		//this.sc = sc;
+	}
+
 	Scanner sc = new Scanner(System.in);
 	public void readBookDetails() {
 		
