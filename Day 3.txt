@@ -10,6 +10,13 @@ Single Inheritance
 Multilevel Inheritance 
 hierarchial Inheritance 
 
+Points to be noted:
+================
+private and static methods cannot be inherited
+constructors cannot be inherited
+final methods cannot be inherited
+final classes cannot be inherited
+
 Methods in Java
 ==============
 Dividing a complex problem in to smaller chunks to understand and reusing
@@ -98,7 +105,7 @@ yes,but number of parameters or type of parameters should be different
 
 Constructors are called at run-time
 
-Note 1:
+Note 1:constructors cannot be overriden
 Note 2:
 
 
@@ -139,6 +146,12 @@ method
 constructor => super class constructor will be called if there is no default constructor if not it shows following error
 "Implicit super constructor A() is undefined. Must explicitly invoke another constructor"
 
+what is constructor overloading?
+adding parameters to the constructors is called as constructor overloading
+
+
+What is constructor chaining?
+calling the constructor inside another constructor explicitly using super or this keyword
 
 Access Modifiers
 =============
@@ -146,10 +159,10 @@ affects the code that is visible to different class in hierarchy
 
 we have 4 types of modifiers in java
 
-1.Public
-2.Protected
-3.Default
-4.Private
+1.Public  (high)
+2.Protected (sub class and non packages sub class)
+3.Default (package level)
+4.Private (only in class)
 
 Access Modifiers or Specifiers are used only for Instance Variable 
 
@@ -179,6 +192,3 @@ yes we can access protected data members in another class which is declared in a
 be sub class of it.
 
 Class members = properties/variables/data + methods
-
-polymorphism
-=============

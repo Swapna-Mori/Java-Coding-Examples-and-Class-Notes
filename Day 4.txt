@@ -1,0 +1,32 @@
+
+polymorphism
+=============
+Poly - n forms
+writing the same method in different forms is called as Polymorphism
+
+there are two types of polymorphism:
+================================
+Method Overriding:
+===============
+if the same method is present in both the super class and the sub class then sub class method
+overrides the super class method
+
+Points to be noted:
+================
+method overriding is also called as run time polymorphism or late binding or dynamic polymorphism
+method overriding can be implemented when two classes are inherited (inheritance/extends keyword is important)
+In method overriding JVM decides which method to call at runtime based on the object called so it is called as runtime polymorphism
+Cannot reduce the visibility(access specifiers) of the inherited methods (only inherited methods with same signature can be overriden)
+
+
+Method Overloading
+===================
+if the same method is present in both the same class or super class but differs in the parameter list then it is called as  method overloading.
+
+Points to be noted:
+================
+method Overloading is also called as compile time polymorphism or early binding or static polymorphism
+method Overloading can be implemented when two classes are inherited or in the same class
+In method Overloading JVM decides which method to call at compile time based on the method signature  so it is called as compiletime polymorphism
+Can reduce the visibility(access specifiers) of the methods 
+
