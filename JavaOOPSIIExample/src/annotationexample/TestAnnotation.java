@@ -9,6 +9,7 @@ public class TestAnnotation {
 		// TODO Auto-generated method stub
 		ValueCheckUsingAnnotation va = new ValueCheckUsingAnnotation();
 		Method m = va.getClass().getMethod("checkValue");
+		System.out.println(m);
 		CustomAnnotation ca = m.getAnnotation(CustomAnnotation.class);
 		System.out.println("data supplied using annotation = " + ca.data());
 		System.out.println("data supplied using annotation = " + ca.message());

@@ -99,16 +99,64 @@ Points to be noted while creating custom annotation
 2. we can specify default if value is not provided then it considers default value
 
 
-
 Practice program
 ==============
 Create an annotation with the same checksalary
 apply it on the getsalary method of EMployee
 
 
-
-
-
-
 Collections in Java
+================
+Array in Java is static in size
+means
+
+int[] a = new int[10];
+
+int 4 bytes  => 95 * 4 = 389 bytes are wasted
+
+and stored only 5 values 100 bytes
+
+Collections are useful for creating dynamic data structures to store objects and delete objects or modify the objects
+Collections in java allocates the memory for objects dynamically
+
+Collection is an Interface
+=====================
+List => ArrayList,Vector,LinkedList
+Set => HashSet,LinkedHashSet
+SortedSet => TreeSet
+Queue => PriorityQueue 
+
+Map interface =>HashMap,HashTable,LinkedHashMap
+SortedMap => TreeMap
+
+The above Classes and interfaces are defined in java.util package
+
+Collections are used to store any and only objects .
+Collections are not allowed to store primitive data types
+
+ ArrayList
+========
+ArrayList is dynamic array to store and manipulate objects 
+ArrayList internally uses array
+
+ArrayList Default capacity is 10
+
+int newCapacity = (oldCapacity *3)/2 + 1 in Java 6
+it increases by 50% of oldcapacity from Java 7
+int newCapacity = oldCapacity + (oldCapacity >> 1) in java 7
+
+add(objectName) => to add objects in to ArrayList
+remove(objectName) => to remove objects from the ArrayList
+
+when only one or two objects are removed it will shift the remaining objects to fill the gaps
+
+
+
+
+
+
+
+
+
+
 
