@@ -18,7 +18,97 @@ When we create CustomExceptions whether it is RuntimeException or compiletimeExc
 compiletimeException when extending the Exception class
 RuntimeException should extend the RuntimeException class
 
+
+ArrayofObjects and Exceptions Practice
+===================================
+Write a Java program to create product class with productId,productName,productPrice,productCategory
+and create an array of products
+search for a product by accepting productid from user if not found throw an exception called
+ProductNotFoundException
+If already product id exists throw an exception called ProductId already exists
+
+
 Annotations
+==========
+Annotations are metadata sent to compiler.
+
+There are five types :
+
+1. Marker Annotations 
+======================
+To mark a declaration.do  not contain any data or any members
+Example:
+========
+@Override => is used to mark a method that it is overriden from interface or abstract class or super class
+,@Test => a method declared using this annotation is considered test case
+
+2. Single Value Annotations
+==========================
+This annotation contains only one member.They allow short hand for specifying value of a member
+@Test("testingAddition")
+@Entity(Tablename = "Student")
+
+3. Full Annotations
+================
+Annotations which consist of multiple data members or names,values etc.,
+Example:
+========
+@Column(columnname = "studentId" , nullable = false)
+
+4. Type Annotations
+==================
+type annotation can be applicable in any place in the class.
+@Target annotation can be used for declaring where we can use this annotation
+
+5. Repeating Annotations
+=====================
+@Repeatable annotation is an example which contains an array of the field
+
+
+Rules for while using annotations
+==================================
+1. annotations are not terminated by ;
+2. annotations startswith @
+3. annotations names are like class names in java
+4. annotations are applied on class or method etc., during RUNTIME or Compile time or Source etc.,
+
+Annotations are defined in java.lang package
+
+We can create our own annotation in java
+
+StandardAnnotationsInJava used in java code
+======================================
+@Override
+@Deprecated
+@Suppresswarning
+
+StandardAnnotationsInJava used in another annotations
+==============================================
+@Target
+@Documented
+@Inherited
+
+Benefits of Annotation
+======================
+instructions to compiler
+@Retention(value=RUNTIME/SOURCE/CLASS)
+
+Points to be noted while creating custom annotation
+===========================================
+1. we should use @ before interface keyword to define an custom annotation
+2. we can specify default if value is not provided then it considers default value
+
+
+
+Practice program
+==============
+Create an annotation with the same checksalary
+apply it on the getsalary method of EMployee
+
+
+
+
+
 
 Collections in Java
 
