@@ -1,0 +1,2 @@
+this is the file created using fileoutputstream
+this line is added to this file to check append is working

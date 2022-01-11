@@ -1,0 +1,24 @@
+Exception Handling is important to continue program execution after an exception caught and handled.
+The execution of program does not terminate when an exception occurs
+once the exception is resolved then program execution continues till complete
+
+Exceptional Handling is important because to main the normal and expected flow of the
+program when some unwanted events occur.
+If not programs may crash or requests may fail.
+
+
+Creating CustomExceptions in java
+=============================
+Rules for Java Exception
+====================
+The user-defined exception class should extend the Exception class
+
+
+When we create CustomExceptions whether it is RuntimeException or compiletimeException?
+compiletimeException when extending the Exception class
+RuntimeException should extend the RuntimeException class
+
+Annotations
+
+Collections in Java
+

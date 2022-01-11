@@ -1,0 +1,169 @@
+Abstract class
+=============
+If a class contains abstract methods then that class should be declared using abstract keyword
+to mark that class as abstract class
+
+Abstract method
+==============
+A method without implementation/unimplemented method is declared with abstract keyword and called as abstract method
+
+like example
+==========
+calculateSalary();
+calcualateAreaOfShape();
+calculateInterest(); etc.,
+
+example:
+=======
+public abstract int add();
+
+Concrete Class
+=============
+when all methods of abstract class or interface are implemented in a class we call it as concrete class
+(concrete class contains all implemented methods)
+
+Important points to be noted
+========================
+1. we cannot instantiate/create an object to the abstract class
+2. can we have a constructor in the abstract class? yes we can provide a constructor in the abstract class to instantiate the implemented methods and variables in that class
+3. can we declare a class as abstract with out any abstract methods?
+yes,to stop instantiation of the class(means to stop object creation) and allow instantiation(invokes this class along with subclass) of this class along with sub class.
+4.  can we declare a static method as abstract?
+No,because unimplemented methods should be implemented/overriden in the subclass(as static methods belong to class and cannot be overriden we cannot declare an abstract methods as static)
+5. what are the access specifiers allowed on abstract method?
+public and protected
+6. 50% of abstraction is provided using abstract class
+7. can we extend more than one abstract class?
+No
+Interface
+=======
+Template or a fully abstract class.It contains only abstract Methods(upto Java 7)
+It contains only abstract Instance Methods(From Java 8) means it can contain static and default methods in the interfaces from Java 8
+
+Important points to be noted
+========================
+== abstract keyword is not mandatory in abstract methods signature of interface because by default the instance methods declared in interface are abstract.
+== methods which are declared in interface by default public
+== can we constructor in interface?
+No constructor cannot have an interface
+== can we declare variables in interface?
+yes
+== if variables are defined in interface by default these variables ae public static and final.
+== can we implement more than one interface in a class?
+yes
+
+== can we create an empty interface?
+yes we can create,
+example of predefined empty interfaces => serializable
+
+== can we override the default methods in interfaces of java 8?
+yes
+
+== loose coupling is main advantage of interface in java
+
+what is coupling?
+===============
+degree to which one class knows about another class.
+If one class uses another class that is coupling
+there should not too much dependency between two classes ,even if there is a dependency to make it minimal we can use interfaces.
+
+when two classes are collaborating with minimal dependency using interface,then both classes are loosely coupled
+when two classes are collaborating with maximum dependency,then both classes are tightly coupled
+
+Coupling of two types:
+=====================
+Tight Coupling
+Loose Coupling (IoC(Inversion of Control)/DI (Dependency Injection))
+
+Spring FrameWork is famous because of loosecoupling (DI).
+
+
+Exception handling and File handling
+===============================
+Exceptions are some unexpected situations that a programmer may face while coding.
+Java provides number of ways to handle this situations
+That's why Java programs are robust programs
+
+Throwable is the super class for all exceptionsin java to handle the exceptions
+java.lang is the package where are the methods to handle the exceptions are defined
+Exception is the sub class of Throwable
+
+There are two types of exceptions in java
+
+1. checked exception
+===================
+exceptions that can be handled by the programmer and occurs at compile time are called as checked exception
+Example:
+========
+FileNotFoundException is the checked exception thrown when file is not found
+IOException 
+2. unchecked exception
+====================
+exceptions that canot be handled by the programmer and have to handle by writing the code and occurs at runtime are called as unchecked exception
+
+
+
+What is the default package imported by java?
+java.lang package
+
+
+
+java.io package provides various claases for the input and output of the data in and out to the programs, from different sources.
+
+BufferedInputStream
+BufferedOutputStream
+BufferedReader
+BufferedWriter
+CharArrayReader
+CharArrayWriter
+File
+FileDescriptor
+FileInputStream
+FileOutputStream
+FileReader
+FileWriter etc.,
+
+
+System.in => in is an variable or field of inputsteam to  The "standard" input stream. This stream is alreadyopen and ready to supply input data. Typically this streamcorresponds to keyboard input or another input source specified bythe host environment or user.
+
+System.out =>out is an variable or field of outputsteam to The "standard" output stream. This stream is alreadyopen and ready to accept output data. Typically this streamcorresponds to display output or another output destinationspecified by the host environment or user. 
+
+For simple stand-alone Java applications, a typical way to writea line of output data is: 
+
+     System.out.println(data)
+ 
+
+See the println methods in class PrintStream.
+
+
+to handle the exceptions we can use following keyword in java
+
+throws
+try
+catch
+finally
+throw
+
+using above we can handle the exceptions or ignore exceptions
+
+throws => it ignores the exception
+
+throws keyword is added to the method to ignore the exception raised inside that method
+
+
+Opening the file
+==============
+Following are different classes in java which helps to create 
+
+Desktop
+FileInputStream 
+BufferedReader
+FileReader
+Scanner
+
+
+
+Annotations
+
+Collections in Java
+
