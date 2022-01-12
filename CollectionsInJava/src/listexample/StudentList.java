@@ -2,6 +2,8 @@ package listexample;
 
 import java.util.ArrayList;
 
+import collectionswithuserdefinedobjects.Student;
+
 public class StudentList {
 	public static void main(String[] args) {
 		

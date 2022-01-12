@@ -138,6 +138,7 @@ Collections are not allowed to store primitive data types
 ========
 ArrayList is dynamic array to store and manipulate objects 
 ArrayList internally uses array
+ArrayList  allows duplicate objects/values can be
 
 ArrayList Default capacity is 10
 

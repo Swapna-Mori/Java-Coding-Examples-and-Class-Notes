@@ -1,0 +1,45 @@
+HashSet
+=======
+
+HashSet in Java store only unique values i.e. no duplicates are allowed.
+HashSet works on concept of hashing i.e.,
+     hashfunction(an unique code) is calculated using value that is stored and generates the code that is unique to store the objects in HashSet.
+When we have same value to store in any of Set classes it will generate the same code for the two same objects
+
+HashSet internally uses HashMap to store the values 
+
+
+HashMap
+========
+HashMap is a concreteclass which implements Map interface
+HashMap store values using key,value pair
+
+HashMap<key,value> empData = new HashMap<key,value>();
+
+HashMap works on principal of hashing.
+
+what is hashing?
+which generates unique code called hashcode
+
+put() method is used to add data in to HashMap by using (hashing) on key value
+the following statement helps to understand that if two values are stored using same key old values will be replaced with new one.
+===================
+put() method Associates the specified value with the specified key in this map.If the map previously contained a mapping for the key, the oldvalue is replaced.
+
+put() method uses equals and hashcode to compare two keys while adding new entry in to the HashMap
+
+We can duplicate values but not keys in HashMap.
+We can store more than one null value but only one key can be null
+
+get() method is used to retrieve the data using keys.
+Once get() method is executed using a key object it generates hashcode and executes equals method to find reference bucket where data is stored
+
+ArrayList,Vector,HashSet all have fail fast iterator .
+fail-fast iterator  throws ConcurrentModificationException (i.e., if you are modifying the structure of the collection by adding or removing while iterating)
+fail-safe iterator  doesnot throw any exception
+
+fail-fast iterator  works on original collection
+fail-safe iterator  copy of original collection
+
+fail-fast iterator provides add, remove and set operations
+fail-safe iterator doesnot provide such operations

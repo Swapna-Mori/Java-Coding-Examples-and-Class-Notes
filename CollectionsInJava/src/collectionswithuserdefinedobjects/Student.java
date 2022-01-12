@@ -1,4 +1,4 @@
-package listexample;
+package collectionswithuserdefinedobjects;
 
 public class Student {
 	private int studentId;
