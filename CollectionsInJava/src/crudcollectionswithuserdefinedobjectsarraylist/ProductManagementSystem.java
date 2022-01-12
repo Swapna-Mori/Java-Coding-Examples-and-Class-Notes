@@ -1,6 +1,7 @@
 package crudcollectionswithuserdefinedobjectsarraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ProductManagementSystem {
@@ -52,6 +53,18 @@ public class ProductManagementSystem {
 		}
 	}
 	
+	public void sortProductsByPrice() {
+		Collections.sort(productList,new PriceComparator());
+		System.out.println("List of products......");
+		for(int i = 0;i<productList.size();i++) {
+				System.out.println(productList.get(i).getProductId()
+						+ "\t" + productList.get(i).getProductName()
+						+ "\t" + productList.get(i).getProductPrice());
+		}
+	}
+	
+	
+	
 	public void showProductOperations() {
 		char ch = 'y';
 		while (ch=='y') {
@@ -61,7 +74,7 @@ public class ProductManagementSystem {
 			System.out.println("2.list all products");
 			System.out.println("3.to delete the product");
 			System.out.println("4.to update product");
-			System.out.println("5.to sort products");
+			System.out.println("5.to sort products by price");
 			int op = sc.nextInt();
 			switch (op) {
 			case 1:
@@ -77,7 +90,9 @@ public class ProductManagementSystem {
 				Product p1 = findProductById(pid);
 				System.out.println(removeProduct(p1));
 				break;
-
+			case 5:
+				sortProductsByPrice();
+				break;
 			default:
 				break;
 			}

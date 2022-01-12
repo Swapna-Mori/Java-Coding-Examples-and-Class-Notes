@@ -1,6 +1,7 @@
 package collectionswithuserdefinedobjects;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -43,7 +44,20 @@ public class StudentArrayList {
 			System.out.println(st11.getStudentId()+ "\t\t" +st11.getStudentName()+ "\t\t" +st11.getStudentMarks());
 		}
 		
-		//studentData.r
+		//System.out.println("data before  sorting ....." + studentData);
+		Collections.sort(studentData);
+
+		//System.out.println("data after sorting ....." + studentData);
+		Iterator<Student> studentItr11 = studentData.iterator();
+		System.out.println("Student Data After Sorting on Name..........");
+		System.out.println("=========================================================================");
+		System.out.println("StudentId" + "\t" + "StudentName" + "\t" +"StudentMarks");
+		System.out.println("=========================================================================");
+
+		while(studentItr11.hasNext()) {
+			Student st11 = studentItr11.next();
+			System.out.println(st11.getStudentId()+ "\t\t" +st11.getStudentName()+ "\t\t" +st11.getStudentMarks());
+		}
 
 	}
 
