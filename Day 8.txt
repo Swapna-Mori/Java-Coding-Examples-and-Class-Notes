@@ -1,0 +1,68 @@
+Interfaces with only one abstract method we call those interfaces as marker interface.
+
+Example
+==========
+Comparator in java.util
+Runnable interface in java.lang et.
+
+In Java8 they have introduced a package called java.util.function is a subpackage in java.util package 
+which contains group of marker interfaces which are called as functional interfaces
+
+ functional interfaces
+==================
+Interfaces with only one abstract method from Java 8 these interfaces are called as Functional Interface
+
+can we have default and static methods in the functional interface?
+yes
+
+how to mark this interface as functional interface?
+using annotation @FunctionalInterface to restrict with only one abstract method
+
+There are two types of functional interfaces which are predefined and userdefined
+
+For userdefined functional interfaces we use @FunctionalInterface to mark it as functional interface
+
+For predefined functional interfaces we can refer to  java.util.function package which contains group of predefined
+functional interfaces.
+
+Advantages of functional Interface in java
+==================================
+we can use this interfaces to write lambda expression instead of using bulky anonymous class implementation
+
+
+what is  anonymous class?
+A class with out name and used to implement a single abstract method interface before java 8.
+
+lambda expression in java 8
+=======================
+A block of code which can be used to implement functional programming in java from java 8 version
+instead of writing the bulky anonymous class for implementing single abstract method interface
+
+(parameters) -> expression
+
+
+Advantages of Lambda Expression
+=============================
+Reduces number of lines of code
+Sequential and Parallel Execution Support
+Passing Behaviours into methods
+
+Write a  java proigram to filter all strings in an arraylist which are starting with "s"?
+
+Write a java program to remove duplicated from list of strings
+
+Method References:
+================
+to refer method of functional interface in compact and easy form.
+
+Method References applied for 3 types of methods
+
+1. static
+2. instance
+2.constructor
+
+
+
+
+
+
