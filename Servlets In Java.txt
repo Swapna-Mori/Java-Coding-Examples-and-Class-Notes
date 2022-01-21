@@ -1,0 +1,60 @@
+Tools
+=====
+STS/Eclipse
+Tomcat
+
+Introduction To Servlet
+===================
+Servlets are server side programs where you can collect the data from web page in the form of forms and saves the data in the database.
+
+Example: Register Page,Login Page,Apply Job etc.,
+
+Two Types of Validations happen while developing an application
+
+1.  Front end validations
+=====================
+HTML,CSS and validations on these code will be written using JavaScript
+
+password must be greater than 8 character
+is checkbox enabled
+required fields etc., 
+
+2. Back end validations
+===================
+Java Code is used for backend validations
+
+Register => The e-mail address you entered has already been registered.
+Login => if user not exists,Login failed. Please check your credentials.
+
+Servlets plays a key role for adding these validations while developing an application using java
+Servlets are used for dynamic web pages
+HTML,CSS and JS are used for static web pages
+
+static web pages => websites => college websites or company websites etc.,
+dynamic web pages => facebook,instagram,amazon,twitter,email etc.,
+
+javax.servlet
+
+Before Servlets
+=============
+CGI
+====
+Common GateWay Interface
+=========================
+disadvantage of CGI
+=================
+CGI creates multiple objects for multiple requests to the CGI code so it increases the load and decreases the performance of the application
+
+Advantage of Servlet over CGI
+=========================
+Servlet process the multiple requests using same object but with help of different threads
+Security
+Scalability
+reliability etc.,
+
+Practice Program
+===============
+Write a servlet code to read data from AddProduct.html page(productid,productname,productprice,productbrand,productcategory) and read that data in to database using servlet code
+
+
+

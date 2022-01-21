@@ -1,0 +1,24 @@
+JSON
+=====
+JavaScript Object Notation
+
+JSON is used to carry the data or store the data from client to server and server to client
+
+JSON have more advantages compared to XML
+======================================
+Readability
+Understandbility
+Scalability
+light weight
+language independent
+easy to read and write
+text based,human readable data exchange format
+
+JSON Data Types
+===============
+string => java.lang.String
+number => java.lang.Number
+true|false => java.lang.Boolean
+Object => java.util.Map
+array => java.util.ArrayList
+null => null

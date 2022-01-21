@@ -1,0 +1,78 @@
+HTTP Protocal
+============
+Hyper Text Transfer Protocal
+
+Protocal?
+=========
+Set of rules to send the information over the network
+
+Example:
+=======
+SMTP
+POP
+HTTP
+FTP
+TCP/IP etc.,
+
+ISO Layers
+=========
+
+IPV4 32 bit IP address
+====
+IPV6 => 128 bit IP address
+
+
+http is an important protocal
+foundation for world wide web(WWW)
+it is stateless protocal (HTTP doesnot allow to store any browsing history)
+ 
+(cookies) => a piece of information about browsing history of a user to speed up the loading of web page is he access second time the same web page
+so http takes the support of cookies to store a piece information about browsing on client side(browser ).
+
+http protocal is an application layer protocal(helps to transfer information between devices connected over the network)
+
+A typical flow over HTTP involves a client for making a request to the server,server then sends the response to the client
+
+URL 
+===
+Uniform Resource Locator =>(network) => www.facebook.com
+
+URI
+===
+Uniform Resource Identifier => (Remote Server) => http://128.23.567.678/login.java
+ 
+Port
+====
+16 bit unsigned integer ranging from 0 to 655XX.
+to idenfiy the address of a resource over the network or In Server
+
+The default port number of HTTP is 8080
+
+Tomcat is a server by apache foundation based on HTTP,so the default port no of tomcat server is 8080
+
+Resource
+========
+Object (data)
+
+HTTP Verbs or HTTP Request Methods
+=========================
+GET  => get the data/resource
+POST => save the new data/new resource
+PUT => modifying an existing data/resource
+DELETE => to delete an existing data/resource
+PATCH => modifying an existing data/resource partially
+TRACE => to search
+OPTIONS => different ways to communicate with resource 
+etc.,
+
+HTTP Status Codes
+================
+Status codes ae issued by server in response to the client requests.
+
+Example:
+========
+1xx : informational response
+2xx : then request succesfully received,understood and accepted
+3xx : further action is required to complete the request
+4xx : bad syntax or cannot be fulfilled as not authorised
+5xx : server failed to fulfill the request (it can be due to db connection or any issue on the server side code)

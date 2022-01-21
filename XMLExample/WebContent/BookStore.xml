@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is called an XML file  -->
+<!DOCTYPE bookstore [
+	<!ELEMENT 	bookstore (book+)>
+	<!ELEMENT 	book (title,year,price)>
+	<!ATTLIST book category CDATA "literature">
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+	<!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+	<book category="COOKING"> <!--  Open tag -->
+		<title>EveryDay SouthIndian</title>
+<!-- 		<author>Rama Krishna</author> -->
+		<year>2009</year>
+		<price>55.60</price>
+	</book><!-- Close tag -->
+		<book category="COOKING"> <!--  Open tag -->
+		<title>EveryDay SouthIndian</title>
+<!-- 		<author>Rama Krishna</author> -->
+		<year>2009</year>
+		<price>55.60</price>
+	</book><!-- Close tag -->
+		<book category="COOKING"> <!--  Open tag -->
+		<title>EveryDay SouthIndian</title>
+<!-- 		<author>Rama Krishna</author> -->
+		<year>2009</year>
+		<price>55.60</price>
+	</book><!-- Close tag -->
+		<book category="COOKING"> <!--  Open tag -->
+		<title>EveryDay SouthIndian</title>
+<!-- 		<author>Rama Krishna</author> -->
+		<year>2009</year>
+		<price>55.60</price>
+	</book><!-- Close tag -->
+</bookstore>

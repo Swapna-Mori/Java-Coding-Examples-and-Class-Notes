@@ -126,5 +126,10 @@ java.sql.Types
 
 The class that defines the constants that are used to identify genericSQL types, called JDBC types.
 
-
+Practice Program to Callable Statement
+=================================
+create a procedure in mysql on above movie table
+to accept movieid as IN parameter
+to read details of the movie
+update the rating of the movie
 

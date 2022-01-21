@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<authors_books>
+	<b:book> <!--  Open tag -->
+		<b:title>EveryDay SouthIndian</b:title>
+		<b:author>Rama Krishna</b:author>
+		<b:year>2009</b:year>
+		<b:price>55.60</b:price>
+	</b:book><!-- Close tag -->
+
+
+	<ba:book>
+		<ba:title>EveryDay SouthIndian</ba:title>
+		<ba:year>2009</ba:year>
+		<ba:price>55.60</ba:price>
+	</ba:book>
+</authors_books>

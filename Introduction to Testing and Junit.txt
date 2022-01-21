@@ -1,0 +1,129 @@
+Junit
+=====
+Testing?
+=======
+By Testing the Code
+
+Manual Testing
+   - test cases using some standard document
+Automation Testing
+   - Selenium (Testing Framework)  it is based on Java (Core Java)
+
+Purpose of Testing:
+=================
+Defect free product
+
+Testing will help us to identify the defects in the product or software or code
+
+Windows 11 = version  => To test the scope and find the errors and get the feedback from the users and improvise it
+
+If a code is tested properly it ensures
+
+reliability
+security
+high performance etc,
+
+results in Customer Satisfaction 
+
+
+There are many incidents that identifies the effectiveness of testing.
+
+1996, a software bug caused in a bank server made credit of 920 million dollars in to different accounts
+
+Types of Testing
+
+1. Functional Testing
+==================
+unit testing 
+===========
+is first level of testing which is performed  by developers to verify correctness of the code.
+unit = Method or Class or Object etc.,
+
+Why Unit Testing is Important?
+==========================
+Defect or bug fixing in later phases of SDLC is difficult and involves lot of time and effort.
+
+Agile
+====
+Product Backlog
+==============
+if product backlog is prepared based on the actions(behaviour)( as product features )of the application
+BDD => Behaviour Driven Development
+if we write product features as test cases first and develop the application on these test cases
+TDD => Test Driven Development
+
+When we write the unit test cases,we can create a good documentation based on that test cases.
+
+In Java development,unit test cases are written with the help of
+Junit => it is a library of assertions for testing piece/unit of code
+Mockito (Mock Objects) => JMockit => it will help for testing or mocking the API
+EMMA => analysing and reporting the code written in java
+etc., 
+
+to test the unit of code written in java.
+
+Nunit => for testing .net applications
+=====
+
+If we want achieve the strong code => you have write as many number of test cases to make it stronger
+
+Truth is Unit testing increase the speed of development.
+
+Once Unit testing is done with all possibilities we can get very simple errors in the integration testing,which can be easily fixed.
+
+"test as you code" approach will help to check for errors at early stages of development
+
+Disadvantage of unit testing
+========================
+it cannot identify the errors of integration testing at early stages
+
+other functional Testing are:
+=======================
+Integration Testing
+Smoke Testing
+User Acceptance Testing
+
+2. Non Functional /Performance Testing
+====================================
+Performance
+Load
+Volume
+Scalability
+Usability etc.,
+
+3. Maintenance (Regression Testing)
+==================================
+Regression Testing
+
+Junit
+=======
+Is a java unit testing framework to write and run repeatable automated tests.
+
+junit contains assertions to test the code
+
+
+Practice Program
+==============
+Write a Java program to create a method called sumoftwoArrays() to define two arrays and test the same using junit
+(assertArrayEquals(expecteds, actuals);) to check whether expected
+
+[34,56,78] -> one array
+[43,65,50] -> second array
+return an array with some of each element of the above array like [77,121,128]
+
+
+assertArrayEquals( [77,121,128], sumoftwoArrays());
+
+II) Write a Java program to create following methods and write the test cases for the same
+ a.Consider an integer array, the number of elements in which is determined by the user. The elements are also taken as input from the user. Write a program to find those pair of elements that has the maximum and minimum difference among all element pairs.
+maximum difference = highest-lowest
+minimum difference = second lowest - lowest
+
+b. If the input array is [10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60], your program should be able to find that the subarray lies between the indexes 3 and 8.
+
+
+
+
+
+
+

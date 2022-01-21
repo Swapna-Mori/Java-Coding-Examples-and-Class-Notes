@@ -1,0 +1,41 @@
+XML
+====
+
+Extended Markup Language
+
+Unlike HTML (A Markup language) which is used to display the content on the browser
+XML is used to carry the data or store the data from client to server and server to client
+
+Unlike HTML,XML does not contain predefined tags
+
+Server
+=======
+A machine with high configuration and a software resolve the requests sent by the client 
+and sends the response
+
+client
+=====
+A machine with a browser or an applicaton that can send requests to the server
+
+request and response should be in a format, to format the data sent as a request or response we can use XML.
+
+XML there is no specific tags,XML is used to create user-defined tags
+
+XML Documents follow Some Syntax Rules
+====================================
+XML element (tag) it should have open and closing tag
+
+
+XML Schema or DTD(Document Type Declaration)
+========================================
+Rules for writing XML file
+
+Example:
+========
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+XML document is validated against XML schema or DTD if it is well formed or not
+
+well formed XML document is an XML document when it follows all set of rules defined in Schema.
+
+XML namespaces provide a method to avaoid name conflicts
